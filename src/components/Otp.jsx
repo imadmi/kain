@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import PhoneInput from "react-phone-input-2";
-import "react-phone-input-2/lib/style.css";
 
-export default function SignIn() {
-  const [value, setValue] = useState();
+export default function Otp() {
+  const [value, setValue] = useState("");
 
+  const handleChange = (event) => {
+    setValue(event.target.value);
+  };
   return (
     <div
       className="w-screen h-dvh flex flex-col bg-gradient-to-t 
@@ -29,15 +30,29 @@ export default function SignIn() {
           src="Rectangle.svg"
           className="w-[20vw] absolute top-5 rounded-full"
         />
-        <div className=" mt-[16vw] mb-[5vw]">Vous pourrez demander à</div>
-        <div className="text-5xl text-[#132083] font-semibold">24,718</div>
-        <div className="text-lg text-[#132083] font-thin">Magazins</div>
+        <div className=" mt-[16vw] mb-[5vw] text-lg text-[#132083]">
+          Confirmation
+        </div>
         <div className="w-[80vw] mt-4 text-center leading-[18px]">
-          Entrez votre numéro de téléphone pour continuer
+          Nous avons envoyé un code vérification au +212 6 60606060
         </div>
-        <div className="mt-[7vw]">
-          <PhoneInput country={"ma"} value={value} onChange={setValue} />
+
+        <div className="relative">
+          <input
+            type="text"
+            value={value}
+            onChange={handleChange}
+            placeholder="Entrez le code de vérification"
+            className="border border-gray-800 rounded px-3 py-2 w-[90vw] mt-[7vw] placeholder:text-sm"
+          />
+          <div
+            className="absolute left-2 -top-3 mt-[7vw] mr-4 text-sm
+           bg-violet-100 px-2 rounded-3xl"
+          >
+            Code de vérification
+          </div>
         </div>
+
         <div className="fixed bottom-[4vh] w-full px-8 flex items-center justify-center">
           <div
             className="bg-[#132083] p-[4vw] text-base w-full rounded-full

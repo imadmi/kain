@@ -5,21 +5,24 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
-import Home from './components/Home.jsx'
+import Splash from './components/Splash.jsx'
 import Welcome from './components/Welcome.jsx';
 import Profile from './components/profile.jsx';
 import SignIn from './components/SignIn.jsx';
+import Otp from './components/Otp.jsx';
+import Home from './components/Home.jsx';
+import Recording from './components/Recording.jsx';
+import Upload from './components/Upload.jsx';
+import Searching from './components/Searching.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/Home",
-    element: <Home />,
-    // errorElement: <ErrorPage />,
+    path: "/",
+    element: <Splash />,
   },
   {
     path: "/welcome",
     element: <Welcome  />,
-    // errorElement: <ErrorPage />,
   },
   {
     path: "/profile",
@@ -29,7 +32,26 @@ const router = createBrowserRouter([
   {
     path: "/signin",
     element: <SignIn />,
-    // errorElement: <ErrorPage />,
+  },
+  {
+    path: "/otp",
+    element: <Otp />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
+  },
+  {
+    path: "/recording",
+    element: <Recording />,
+  },
+  {
+    path: "/upload",
+    element: <Upload />,
+  },
+  {
+    path: "/searching",
+    element: <Searching />,
   },
 ]);
 
