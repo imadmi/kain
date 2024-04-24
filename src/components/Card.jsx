@@ -18,7 +18,7 @@ export default function Card() {
           alt="face pic"
           className="h-[80%] w-[80%] mb-1"
         />
-        <div className="bg-[#132083] text-center px-2 py-1 text-xs rounded-md mb-1">
+        <div className="bg-[#132083] text-white text-center px-2 py-1 text-xs rounded-md mb-1">
           2.4 km
         </div>
       </div>

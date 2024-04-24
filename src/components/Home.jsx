@@ -6,23 +6,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import RecordingModal from "./RecordingModal";
 
-const modalVariants = {
-  hidden: { 
-     opacity: 0, 
-     y: 50, 
-     transition: { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] } 
-  },
-  visible: { 
-     opacity: 1, 
-     y: 0, 
-     transition: { duration: 0, ease: [0.43, 0.13, 0.23, 0.96] } 
-  },
-  exit: { 
-     opacity: 0, 
-     transition: { duration: 2, ease: [0.43, 0.13, 0.23, 0.96] } 
-  },
- };
- 
+
 export default function Home() {
   const [showRecording, setShowRecording] = React.useState(false);
   const modalRef = useRef();

@@ -14,7 +14,7 @@ export default function RecordingModal() {
   return (
     <div
       className="fixed bottom-0 w-full h-[55vh] bg-white z-20 rounded-t-[40px] 
-      flex flex-col items-center text-black text-base"
+      flex flex-col items-center text-black text-base border border-black"
     >
       <img
         src="Rectangle.svg"

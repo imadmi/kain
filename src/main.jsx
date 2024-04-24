@@ -14,6 +14,7 @@ import Home from './components/Home.jsx';
 import Recording from './components/Recording.jsx';
 import Upload from './components/Upload.jsx';
 import Searching from './components/Searching.jsx';
+import Availability from './components/Availability.jsx';
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/availability",
+    element: <Availability />,
   },
 ]);
 
