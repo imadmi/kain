@@ -5,7 +5,7 @@ export default function Card() {
   return (
     <div
       className="bg-[#F3F3F3] mt-5 flex w-[90vw] h-24 rounded-xl
-  flex-row justify-between shadow-lg overflow-hidden relative mb-6"
+  flex-row justify-between shadow-lg overflow-hidden relative mb-10"
     >
       <div className="flex flex-col h-[84%] justify-between my-2 ml-2 w-[8%]">
         <img src="makeup.svg" alt="makeup" />
