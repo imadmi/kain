@@ -53,6 +53,10 @@ const router = createBrowserRouter([
     path: "/searching",
     element: <Searching />,
   },
+  {
+    path: "/home",
+    element: <Home />,
+  },
 ]);
 
 

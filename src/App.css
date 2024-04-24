@@ -22,3 +22,14 @@
     animation-iteration-count: infinite;
   }
   
+  .sphere {
+    border-radius: 40% / 30% ;
+  }
+
+  .trapezoid {
+	border-bottom: 50px solid #555;
+	border-left: 10px solid transparent;
+  }
+  
+   
+  
