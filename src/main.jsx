@@ -15,6 +15,7 @@ import Recording from './components/Recording.jsx';
 import Upload from './components/Upload.jsx';
 import Searching from './components/Searching.jsx';
 import Availability from './components/Availability.jsx';
+import NewChat from './components/NewChat.jsx';
 
 const router = createBrowserRouter([
   {
@@ -61,6 +62,10 @@ const router = createBrowserRouter([
   {
     path: "/availability",
     element: <Availability />,
+  },
+  {
+    path: "/newchat",
+    element: <NewChat />,
   },
 ]);
 

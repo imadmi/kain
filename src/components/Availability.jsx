@@ -1,9 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import { CgProfile } from "react-icons/cg";
 import "../App.css";
-import Card from "./Card";
-import { motion, AnimatePresence } from "framer-motion";
-import RecordingModal from "./RecordingModal";
 import AvailabilityCard from "./AvailabilityCard";
 import { IoHomeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
