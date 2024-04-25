@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ProfileConfigurator1() {
+export default function ProfileConfigurator2() {
   const fileInputRef = React.useRef(null);
   const [pic, setpic] = React.useState(null);
   const handleUploadClick = () => {
@@ -41,36 +41,10 @@ export default function ProfileConfigurator1() {
           className="mt-14 h-[40vh] w-full mb-[10vh] overflow-y-auto flex flex-col items-center
         justify-between"
         >
-          <div className="w-full px-6 text-sm text-center">
-            Le logo de votre entreprise vous donne de la crédibilité et renforce
-            votre image de marque
-          </div>
-
-          {!pic && (
-            <img
-              onClick={handleUploadClick}
-              src="uploadlogo.svg"
-              alt=""
-              className="w-1/2 mt-6"
-            />
-          )}
-          {pic && (
-            <img
-              src={pic}
-              className="w-1/2 mt-6 rounded-full border border-gray-500 "
-            />
-          )}
-          <input
-            type="file"
-            ref={fileInputRef}
-            onChange={handleFileChange}
-            className="hidden"
-            accept="image/jpeg, image/png, image/gif"
-          />
           <input
             type="text"
             className="border border-gray-500 w-[85vw] py-2 mt-6 pl-2 rounded-lg"
-            placeholder="Nom de la boutique"
+            placeholder="Adresse"
           />
         </div>
 
