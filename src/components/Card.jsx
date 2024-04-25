@@ -8,9 +8,9 @@ export default function Card() {
   flex-row justify-between shadow-lg overflow-hidden relative mb-10"
     >
       <div className="flex flex-col h-[84%] justify-between my-2 ml-2 w-[8%]">
-        <img src="makeup.svg" alt="makeup" />
-        <img src="bike.svg" alt="bike" />
-        <img src="paycreditcard.svg" alt="pay credit card" />
+        <img src="makeup.svg" alt="makeup" className="w-6"/>
+        <img src="bike.svg" alt="bike" className="w-6"/>
+        <img src="paycreditcard.svg" alt="pay credit card" className="w-6"/>
       </div>
       <div className="flex flex-col h-[86%] justify-between items-center my-2 ml-2 w-[20%]">
         <img
