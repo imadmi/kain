@@ -31,5 +31,6 @@
 	border-left: 10px solid transparent;
   }
   
-   
-  
+  .custom-radio {
+    accent-color : #7d2da9;
+  }

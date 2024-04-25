@@ -18,6 +18,7 @@ import Availability from './components/Availability.jsx';
 import NewChat from './components/NewChat.jsx';
 import ListSales from './components/ListSales.jsx';
 import Test from './components/Test.jsx';
+import CategorySelector from './components/CategorySelector.jsx';
 
 const router = createBrowserRouter([
   {
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
   {
     path: "/test",
     element: <Test />,
+  },
+  {
+    path: "/categoryselector",
+    element: <CategorySelector />,
   },
 ]);
 
