@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function ProfileConfigurator1() {
   const fileInputRef = React.useRef(null);
@@ -74,7 +75,8 @@ export default function ProfileConfigurator1() {
           />
         </div>
 
-        <button className="fixed bottom-[4vh] w-full px-8 flex items-center justify-center">
+        <Link to={"/profileConfigurator2"}
+         className="fixed bottom-[4vh] w-full px-8 flex items-center justify-center">
           <div
             className="bg-[#132083] p-[4vw] text-base w-full rounded-full
         flex items-center justify-center text-white font-semibold"
@@ -82,7 +84,7 @@ export default function ProfileConfigurator1() {
             <img src="audio.svg" className="mr-3 filter invert " />
             Continuer
           </div>
-        </button>
+        </Link>
       </div>
     </div>
   );

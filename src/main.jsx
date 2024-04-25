@@ -22,6 +22,7 @@ import CategorySelector from './components/CategorySelector.jsx';
 import SubCategorySelector from './components/SubCategorySelector.jsx';
 import ProfileConfigurator1 from './components/ProfileConfigurator1.jsx';
 import ProfileConfigurator2 from './components/ProfileConfigurator2.jsx';
+import ProfileConfigurator3 from './components/ProfileConfigurator3.jsx';
 
 const router = createBrowserRouter([
   {
@@ -96,6 +97,10 @@ const router = createBrowserRouter([
   {
     path: "/profileConfigurator2",
     element: <ProfileConfigurator2 />,
+  },
+  {
+    path: "/profileConfigurator3",
+    element: <ProfileConfigurator3 />,
   },
 ]);
 

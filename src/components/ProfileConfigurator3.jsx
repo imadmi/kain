@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default function ProfileConfigurator2() {
+export default function ProfileConfigurator3() {
   const [clicked, setclicked] = React.useState(false);
 
   return (
@@ -18,7 +17,7 @@ export default function ProfileConfigurator2() {
         className="text-xl h-[20vh] flex justify-center items-center font-semibold
     w-4/6 text-center "
       >
-        Désormais, configurons votre profil de vente !
+        Votre profil a été crée avec succès
       </div>
       <div
         className="fixed bottom-0 w-full h-[60vh] bg-white z-10 rounded-t-[40px] 
@@ -30,17 +29,15 @@ export default function ProfileConfigurator2() {
         />
         <div
           className="mt-14 h-[40vh] w-full mb-[10vh] overflow-y-auto flex flex-col items-center
-        justify-between"
+        justify-centre"
         >
-          <input
-            type="text"
-            className="border border-gray-500 w-[85vw] py-2 mt-6 pl-2 rounded-lg"
-            placeholder="Adresse"
-          />
+          <img src="double-check.svg" alt="" />
+          <div className="text-sm">
+          Vous pouvez désormais reçevoir des requêtes
+          </div>
         </div>
 
-        <Link to={"/profileConfigurator3"}
-         className="fixed bottom-[4vh] w-full px-8 flex items-center justify-center">
+        <button className="fixed bottom-[4vh] w-full px-8 flex items-center justify-center">
           <div
             className="bg-[#132083] p-[4vw] text-base w-full rounded-full
         flex items-center justify-center text-white font-semibold"
@@ -48,7 +45,7 @@ export default function ProfileConfigurator2() {
             <img src="audio.svg" className="mr-3 filter invert " />
             Continuer
           </div>
-        </Link>
+        </button>
       </div>
     </div>
   );
