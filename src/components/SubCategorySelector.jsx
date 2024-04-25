@@ -8,7 +8,7 @@ const categories = [
   "Auto-Moto",
   "Maison & Jardin",
 ];
-export default function CategorySelector() {
+export default function SubCategorySelector() {
   const [checked, setChecked] = useState(true);
   return (
     <div
@@ -21,10 +21,10 @@ export default function CategorySelector() {
         <div className="text-xl font-thin">Ghir sewel</div>
       </div>
       <div
-        className="text-xl h-[20vh] flex justify-center items-center font-semibold
+        className="text-2xl h-[20vh] flex justify-center items-center font-semibold
       w-4/6 text-center "
       >
-        Recherche de disponibilité en cours
+        Choisissez votre catégorie
       </div>
       <div
         className="fixed bottom-0 w-full h-[60vh] bg-white z-10 rounded-t-[40px] 

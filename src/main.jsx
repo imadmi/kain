@@ -19,6 +19,7 @@ import NewChat from './components/NewChat.jsx';
 import ListSales from './components/ListSales.jsx';
 import Test from './components/Test.jsx';
 import CategorySelector from './components/CategorySelector.jsx';
+import SubCategorySelector from './components/SubCategorySelector.jsx';
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
   {
     path: "/categoryselector",
     element: <CategorySelector />,
+  },
+  {
+    path: "/subcategoryselector",
+    element: <SubCategorySelector />,
   },
 ]);
 
