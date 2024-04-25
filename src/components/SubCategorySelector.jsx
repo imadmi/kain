@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "../App.css";
 
 const categories = [
-  "Informatique",
-  "Smartphone",
-  "Cosmétique",
-  "Auto-Moto",
-  "Maison & Jardin",
+  "Ordinateurs portables",
+  "Ordinateurs bureau",
+  "Composants",
+  "Cartes mère",
+  "Accessoires",
 ];
 export default function SubCategorySelector() {
   const [checked, setChecked] = useState(true);
@@ -24,7 +24,7 @@ export default function SubCategorySelector() {
         className="text-2xl h-[20vh] flex justify-center items-center font-semibold
       w-4/6 text-center "
       >
-        Choisissez votre catégorie
+        Choisissez plusieurs sous-catégorie
       </div>
       <div
         className="fixed bottom-0 w-full h-[60vh] bg-white z-10 rounded-t-[40px] 
@@ -45,12 +45,12 @@ export default function SubCategorySelector() {
               <div>{category}</div>
               <div>
                 <input
-                  type="radio"
+                  type="checkbox"
                   checked={checked}
                   onChange={() => {
                     setChecked(!checked);
                   }}
-                  className="custom-radio w-5 h-5"
+                  className="custom-radio w-5 h-5 b-1"
                 />
               </div>
             </div>
