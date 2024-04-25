@@ -20,6 +20,7 @@ import ListSales from './components/ListSales.jsx';
 import Test from './components/Test.jsx';
 import CategorySelector from './components/CategorySelector.jsx';
 import SubCategorySelector from './components/SubCategorySelector.jsx';
+import ProfileConfigurator1 from './components/ProfileConfigurator1.jsx';
 
 const router = createBrowserRouter([
   {
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
   {
     path: "/subcategoryselector",
     element: <SubCategorySelector />,
+  },
+  {
+    path: "/profileConfigurator1",
+    element: <ProfileConfigurator1 />,
   },
 ]);
 
