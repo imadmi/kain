@@ -25,6 +25,8 @@ import ProfileConfigurator2 from './components/ProfileConfigurator2.jsx';
 import ProfileConfigurator3 from './components/ProfileConfigurator3.jsx';
 import HomeRetailers from './components/HomeRetailers.jsx';
 import Demandes from './components/Demandes.jsx';
+import DemandeConfirmation from './components/DemandeConfirmation.jsx';
+import OffersListing from './components/OffersListing.jsx';
 
 const router = createBrowserRouter([
   {
@@ -111,6 +113,14 @@ const router = createBrowserRouter([
   {
     path: "/demandes",
     element: <Demandes />,
+  },
+  {
+    path: "/demandeconfirmation",
+    element: <DemandeConfirmation />,
+  },
+  {
+    path: "/offerslisting",
+    element: <OffersListing />,
   },
 ]);
 
