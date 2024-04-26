@@ -27,6 +27,7 @@ import HomeRetailers from './components/HomeRetailers.jsx';
 import Demandes from './components/Demandes.jsx';
 import DemandeConfirmation from './components/DemandeConfirmation.jsx';
 import OffersListing from './components/OffersListing.jsx';
+import ChatHistory from './components/ChatHistory.jsx';
 
 const router = createBrowserRouter([
   {
@@ -121,6 +122,10 @@ const router = createBrowserRouter([
   {
     path: "/offerslisting",
     element: <OffersListing />,
+  },
+  {
+    path: "/chathistory",
+    element: <ChatHistory />,
   },
 ]);
 
