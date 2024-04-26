@@ -27,19 +27,8 @@ export default function Availability() {
         <AvailabilityCard />
         <AvailabilityCard />
       </div>
-      <div className="absolute bottom-[20vh] -z-50">
-        <div
-          className="absolute sphere rotate-12 w-[200vw] h-[100vw] -translate-x-[10vw]
-        bg-gradient-to-t from-[#1d34e4] to-[#1e1e1e] shadow-inner"
-        />
-        <div
-          className="absolute #bg-gradient-to-t from-[#1d34e4] to-[#1d30c6] 
-        h-[80vh] w-screen top-40 left-0"
-          style={{
-            background: `linear-gradient(to bottom, rgba(29, 52, 228, 0) 0%, 
-          rgba(29, 52, 228, 1) 10%, rgba(29, 48, 198, 1) 100%)`,
-          }}
-        />
+      <div className="absolute bottom-0 -z-50 w-full">
+        <img src="ellipse.svg" alt="" className="w-full"/>
       </div>
     </div>
   );
