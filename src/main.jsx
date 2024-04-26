@@ -24,6 +24,7 @@ import ProfileConfigurator1 from './components/ProfileConfigurator1.jsx';
 import ProfileConfigurator2 from './components/ProfileConfigurator2.jsx';
 import ProfileConfigurator3 from './components/ProfileConfigurator3.jsx';
 import HomeRetailers from './components/HomeRetailers.jsx';
+import Demandes from './components/Demandes.jsx';
 
 const router = createBrowserRouter([
   {
@@ -106,6 +107,10 @@ const router = createBrowserRouter([
   {
     path: "/homeretailers",
     element: <HomeRetailers />,
+  },
+  {
+    path: "/demandes",
+    element: <Demandes />,
   },
 ]);
 
